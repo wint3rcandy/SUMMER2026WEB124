@@ -1,0 +1,36 @@
+header {
+  text-align: center;
+}
+
+.main-image {
+  width: 400px;
+  max-width: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.content-sections {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.calculator {
+  margin-top: 30px;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+  max-width: 400px;
+}
+
+h1,
+h2 {
+  color: crimson;
+}
