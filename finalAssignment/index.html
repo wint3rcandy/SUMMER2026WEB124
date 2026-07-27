@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Powerlifting Central</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Powerlifting Central</h1>
+    <p>A blog that informs readers about everything powerlifting.</p>
+    <img class="main-image" src="powerlifting-hero.png" alt="A cartoon powerlifter deadlifting a heavily loaded barbell">
+  </header>
+
+  <main>
+    <div class="content-sections">
+      <section>
+        <h2>Nutrition</h2>
+        <p>Learn how balanced meals, enough protein, and proper hydration go into supporting your strength in the gym.</p>
+      </section>
+
+      <section>
+        <h2>Training</h2>
+        <p>Explore ways to improve your squat, bench press, and deadlift through different methods of training.</p>
+      </section>
+
+      <section>
+        <h2>Sleep</h2>
+        <p>Discover why quality sleep is so badly important for muscle recovery, performance, and long-term progress.</p>
+      </section>
+    </div>
+
+    <section class="calculator">
+      <h2>BMI Calculator</h2>
+      <form id="bmi-form">
+        <label for="bmi-height">Height in inches:</label>
+        <input id="bmi-height" name="height" type="number" min="1" step="0.1" required>
+
+        <label for="bmi-weight">Weight in pounds:</label>
+        <input id="bmi-weight" name="weight" type="number" min="1" step="0.1" required>
+
+        <button type="submit">Calculate BMI</button>
+      </form>
+      <p id="bmi-result" aria-live="polite"></p>
+    </section>
+
+    <section class="calculator">
+      <h2>Resting Calorie Calculator</h2>
+      <form id="calorie-form">
+        <label for="calorie-age">Age:</label>
+        <input id="calorie-age" name="age" type="number" min="1" required>
+
+        <label for="calorie-height">Height in inches:</label>
+        <input id="calorie-height" name="height" type="number" min="1" step="0.1" required>
+
+        <label for="calorie-weight">Weight in pounds:</label>
+        <input id="calorie-weight" name="weight" type="number" min="1" step="0.1" required>
+
+        <label for="calorie-gender">Gender:</label>
+        <select id="calorie-gender" name="gender" required>
+          <option value="">Choose an option</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="rather-not-say">Rather not say</option>
+        </select>
+
+        <button type="submit">Estimate Resting Calories</button>
+      </form>
+      <p id="calorie-result" aria-live="polite"></p>
+    </section>
+  </main>
+</body>
+</html>
